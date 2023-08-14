@@ -2078,11 +2078,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Bodega\\Bodega\\Bodega.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Bodega1\\Bodega\\Bodega.csproj",
       "projectName": "Bodega",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\Bodega\\Bodega\\Bodega.csproj",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\Bodega1\\Bodega\\Bodega.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\source\\repos\\Bodega\\Bodega\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\source\\repos\\Bodega1\\Bodega\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

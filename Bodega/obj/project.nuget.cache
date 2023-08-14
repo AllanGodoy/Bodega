@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7YHXPyLTIp9RMOFuJwGSKiFwbiA5V4lS0YK5Py5+fpf/DGGHIP2ePG67fe3XX0TKLzF4TvPs/xwgOOAhM8aHPQ==",
+  "dgSpecHash": "eUwVfj/I7cZRqZYhHRz3e14Z7xiK1uUfWpTyejkIARw5hFh4/MMhvVDZtaXjqh8n/Pir8dANOBxQHFAKcYWALA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\Bodega\\Bodega\\Bodega.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\Bodega1\\Bodega\\Bodega.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",
