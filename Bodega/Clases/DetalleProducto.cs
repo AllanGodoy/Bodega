@@ -132,8 +132,6 @@ namespace Bodega.Clases
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;
-
-
         }
     }
 }
