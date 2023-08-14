@@ -120,5 +120,17 @@ namespace Bodega.Clases
                 MessageBox.Show("No se logro eliminar los registros, error =" + ex.ToString());
             }
         }
+
+
+        //------------Combobox
+        public DataTable CargaCombobox()
+        {
+            Clases.CConexion conexion = new Clases.CConexion();
+            SqlDataAdapter da = new SqlDataAdapter("sp_getCbxTipoTransaccion", conexion.estableceConexion());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
     }
 }

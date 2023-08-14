@@ -34,14 +34,18 @@ namespace Bodega
         }
 
 
-
+        //--- combobox 
         private void Detalle_Load(object sender, EventArgs e)
         {
+            Clases.DetalleProducto objetoDetalleProducto = new Clases.DetalleProducto();
+            cboTipoTransaccion.DataSource = objetoDetalleProducto.CargaCombobox();
+            cboTipoTransaccion.DisplayMember = "Nombre";
+            cboTipoTransaccion.ValueMember = "Id";
 
         }
 
 
-
+        //------------Error en el DatagridView
         private void dgvDetalleProducto_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
             MessageBox.Show("Registro ingresado es invalido ");

@@ -38,16 +38,18 @@
             label4 = new Label();
             txtNombre = new TextBox();
             label5 = new Label();
+            cboTipoTransaccion = new ComboBox();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvDetalleProducto).BeginInit();
             SuspendLayout();
             // 
             // dgvDetalleProducto
             // 
             dgvDetalleProducto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDetalleProducto.Location = new Point(22, 149);
+            dgvDetalleProducto.Location = new Point(22, 169);
             dgvDetalleProducto.Name = "dgvDetalleProducto";
             dgvDetalleProducto.RowTemplate.Height = 25;
-            dgvDetalleProducto.Size = new Size(766, 289);
+            dgvDetalleProducto.Size = new Size(766, 269);
             dgvDetalleProducto.TabIndex = 0;
             dgvDetalleProducto.CellBeginEdit += dgvDetalleProducto_CellBeginEdit;
             dgvDetalleProducto.CellEndEdit += dgvDetalleProducto_CellEndEdit;
@@ -129,11 +131,30 @@
             label5.TabIndex = 9;
             label5.Text = "Nombre";
             // 
+            // cboTipoTransaccion
+            // 
+            cboTipoTransaccion.FormattingEnabled = true;
+            cboTipoTransaccion.Location = new Point(603, 137);
+            cboTipoTransaccion.Name = "cboTipoTransaccion";
+            cboTipoTransaccion.Size = new Size(121, 23);
+            cboTipoTransaccion.TabIndex = 10;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(479, 140);
+            label6.Name = "label6";
+            label6.Size = new Size(110, 15);
+            label6.TabIndex = 11;
+            label6.Text = "Test storeProcedure";
+            // 
             // Detalle
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label6);
+            Controls.Add(cboTipoTransaccion);
             Controls.Add(label5);
             Controls.Add(txtNombre);
             Controls.Add(label4);
@@ -166,5 +187,7 @@
         private TextBox txtDescripcion;
         private TextBox txtCantidadActual;
         private Label label5;
+        private ComboBox cboTipoTransaccion;
+        private Label label6;
     }
 }
