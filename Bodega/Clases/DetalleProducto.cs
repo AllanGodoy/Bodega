@@ -13,13 +13,14 @@ namespace Bodega.Clases
     {
         //-------- llena datos del producto---------------
 
-        public void mostrarProducto(object Id, TextBox parmCodigoProducto, TextBox parmCantidadActual, TextBox parmDescripcion, TextBox parmNombre) 
+        public void mostrarProducto(object Id, TextBox parmCodigoProducto, TextBox parmCantidadActual, TextBox parmDescripcion, TextBox parmNombre)
         {
             Clases.CConexion conexion = new Clases.CConexion();
-            String sql = " Select * from producto where Id='"+Id+"'";
-            SqlCommand comando = new SqlCommand(sql,conexion.estableceConexion());
-            SqlDataReader lector= comando.ExecuteReader();
-            if (lector.Read()) {
+            String sql = " Select * from producto where Id='" + Id + "'";
+            SqlCommand comando = new SqlCommand(sql, conexion.estableceConexion());
+            SqlDataReader lector = comando.ExecuteReader();
+            if (lector.Read())
+            {
                 parmCodigoProducto.Text = lector["CodigoProducto"].ToString();
                 parmNombre.Text = lector["Nombre"].ToString();
                 parmCantidadActual.Text = lector["CantidadActual"].ToString();
@@ -29,8 +30,8 @@ namespace Bodega.Clases
                 parmNombre.ReadOnly = true;
                 parmCantidadActual.ReadOnly = true;
                 parmDescripcion.ReadOnly = true;
-                
-            }        
+
+            }
         }
 
 
@@ -41,7 +42,7 @@ namespace Bodega.Clases
             try
             {
                 tablaDetalleProducto.DataSource = null;
-                SqlDataAdapter adapter = new SqlDataAdapter("select * from DetalleProducto where IdProducto='"+Id+"'", objectoConexion.estableceConexion());
+                SqlDataAdapter adapter = new SqlDataAdapter("select * from DetalleProducto where IdProducto='" + Id + "'", objectoConexion.estableceConexion());
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
                 tablaDetalleProducto.DataSource = dt;
@@ -60,7 +61,7 @@ namespace Bodega.Clases
 
             try
             {
-                string query = "insert into DetalleProducto (fecha, Descripcion, IdTipoTransaccion, Cantidad, IdProducto) values ('','','','',"+Id+")";
+                string query = "insert into DetalleProducto (fecha, Descripcion, IdTipoTransaccion, Cantidad, IdProducto) values ('','','',''," + Id + ")";
                 SqlCommand cmd = new SqlCommand(query, objectoConexion.estableceConexion());
                 SqlDataReader myReader;
                 myReader = cmd.ExecuteReader();
@@ -131,6 +132,8 @@ namespace Bodega.Clases
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;
+
+
         }
     }
 }

@@ -30,8 +30,9 @@ namespace Bodega
         {
 
             dgvDetalleProducto.Columns[5].Visible = false;
-
+                       
         }
+    
 
 
         //--- combobox 
@@ -41,6 +42,14 @@ namespace Bodega
             cboTipoTransaccion.DataSource = objetoDetalleProducto.CargaCombobox();
             cboTipoTransaccion.DisplayMember = "Nombre";
             cboTipoTransaccion.ValueMember = "Id";
+
+
+            
+            //var combobox = (DataGridViewComboBoxColumn)dgvDetalleProducto.Columns["TipoTransaccion"];
+            //combobox.DataSource = objetoDetalleProducto.CargaCombobox();
+            //combobox.DisplayMember = "Nombre";
+            //combobox.ValueMember = "Id";
+            //dgvDetalleProducto.DataSource = combobox;
 
         }
 
